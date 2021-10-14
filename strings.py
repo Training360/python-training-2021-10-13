@@ -20,6 +20,8 @@ while i < len(name):
     i = i + 1
 
 for c in name:
+    if c == " ":
+        break
     print(c)
 
 name = "John Doe"
