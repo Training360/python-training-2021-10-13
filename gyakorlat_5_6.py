@@ -7,6 +7,9 @@ for a_char in name:
         print("Talaltam e-t!")
         break
 
+if 'e' in name:
+    print("Van benne e")
+
 counter = 0
 for a_char in name:
     if a_char == "e" or a_char == "E":
