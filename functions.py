@@ -20,6 +20,8 @@ def count_spaces(s):
 def calculate_average(numbers):
     """Írj egy függvényt, ami paraméterként átadott lista átlagát
 adja vissza"""
+    if len(numbers) == 0:
+        return 0
     result = 0
     for number in numbers:
         result += number
