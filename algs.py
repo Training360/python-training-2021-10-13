@@ -36,3 +36,41 @@ for name in names:
     if len(name) > len(max_name):
         max_name = name
 print(max_name)
+
+# Számlálás tétele
+# Adott egész számok listája,
+# írd ki, hány páros szám van benne!
+numbers = [10, 24, 21, 25, 2, 234, 64, 234, 534]
+number_of_even = 0
+for number in numbers:
+    if number % 2 == 0:
+        number_of_even += 1
+
+print(number_of_even)
+
+# Eldöntés tétele
+# Szerepel-e Jack?
+names = ["John", "Jack", "Jane"]
+for name in names:
+    if name == "Jack":
+        print("Van Jack!")
+        break
+
+# Szűrés
+# Számok listájából válogasd ki egy másik
+# listába a páros számokat
+numbers = [10, 24, 21, 25, 2, 234, 64, 234, 534]
+even_numbers = []
+for number in numbers:
+    if number % 2 == 0:
+        even_numbers.append(number)
+print(even_numbers)
+
+# Transzformáció (map)
+# Hozz létre egy új listát,
+# ami a nevek hosszát tartalmazza!
+names = ["John", "John John John John", "Jack", "John Doe"]
+length_of_names = []
+for name in names:
+    length_of_names.append(len(name))
+print(length_of_names)
