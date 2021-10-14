@@ -36,7 +36,8 @@ def count_vowels(s):
     return count
 
 
-print_hello()
-# print(sum_numbers(10, 20))
-result = sum_numbers(10, 20)
-print(result)
+# print_hello()
+# # print(sum_numbers(10, 20))
+# result = sum_numbers(10, 20)
+# print(result)
+# input("grrr")
