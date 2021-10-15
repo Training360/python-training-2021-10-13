@@ -1,4 +1,6 @@
 FROM python
 WORKDIR app
-COPY hello_pycharm.py .
-ENTRYPOINT python hello_pycharm.py
+COPY index_korona.py .
+COPY requirements.txt .
+RUN pip install -r ./requirements.txt
+ENTRYPOINT python index_korona.py

@@ -12,4 +12,5 @@ for line in lines:
 
 now = datetime.now()
 with open("korona.txt", mode="a") as f:
+    print(f"{now} - {count}\n")
     f.write(f"{now} - {count}\n")
