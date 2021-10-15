@@ -1,6 +1,6 @@
-import requests
+from requests import get
 
-response = requests.get("https://raw.githubusercontent.com/jeffreylancaster/game-of-thrones/master/data/characters.json")
+response = get("https://raw.githubusercontent.com/jeffreylancaster/game-of-thrones/master/data/characters.json")
 content = response.json()
 
 characters = content["characters"]
