@@ -25,3 +25,8 @@ cur.execute("insert into employees(emp_name) values (?)", ("John Doe",))
 cur.execute("insert into employees(emp_name) values (?)", ("John Doe",))
 cur.execute("insert into employees(emp_name) values (?)", ("John Doe",))
 conn.commit()
+
+cur.execute(
+    "SELECT id, emp_name FROM employees")
+for (id, name) in cur:
+    print(f"Id: {id}, Name: {name}")
